@@ -1,0 +1,9 @@
+html, body {
+  margin: 20px;
+}
+
+.ember-lightbox img {
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
