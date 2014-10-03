@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-lightbox",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,6 +11,7 @@
     "test": "ember test"
   },
   "repository": "https://github.com/ramybenaroya/ember-cli-lightbox",
+  "homepage": "http://ramybenaroya.github.io/ember-cli-lightbox",
   "engines": {
     "node": ">= 0.10.0"
   },
