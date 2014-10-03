@@ -1,39 +1,13 @@
 /* global require, module */
-var mergeTrees = require('broccoli-merge-trees');
 
-var appTree = mergeTrees(['app', 'app-addon'], {
-	overwrite: true
+var EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+
+var app = new EmberAddon({
+    trees : {
+        public: 'tests/dummy/public'
+    },
+    snippetPaths: ['tests/dummy/snippets']
 });
-var templateTree = mergeTrees(['app/templates', 'templates-addon']);
-var vendorTree = mergeTrees(['vendor', 'vendor-addon']);
-
-var EmberApp = require('ember-cli/lib/broccoli/ember-app');
-
-
-
-var app = new EmberApp({
-  trees: {
-		app: appTree,
-		templates: templateTree,
-    vendor: vendorTree
-	}
-});
-
-app.import('bower_components/lightbox/img/close.png', {
-    destDir: 'assets/images/lightbox'
-});
-app.import('bower_components/lightbox/img/loading.gif', {
-    destDir: 'assets/images/lightbox'
-});
-app.import('bower_components/lightbox/img/next.png', {
-    destDir: 'assets/images/lightbox'
-});
-app.import('bower_components/lightbox/img/prev.png', {
-    destDir: 'assets/images/lightbox'
-});
-
-app.import('vendor/ember-cli-lightbox/styles/style.css');
-app.import('bower_components/lightbox/js/lightbox.js');
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
