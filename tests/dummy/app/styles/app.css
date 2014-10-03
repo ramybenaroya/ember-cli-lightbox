@@ -41,7 +41,10 @@ section {
     border-radius: 4px;
     padding: 0 25px 20px 25px;
     margin: 15px 0;
-    background-color: #fcfcfc;
+    background-color: #fafafa;
+}
+section section {
+    background-color: #fefefe;
 }
 
 pre {

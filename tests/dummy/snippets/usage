@@ -1,0 +1,2 @@
+npm install ember-cli-lightbox --save
+ember g ember-cli-lightbox
