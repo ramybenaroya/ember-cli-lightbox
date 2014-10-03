@@ -9,17 +9,17 @@
 
     <base href="/ember-cli-lightbox/">
 
-    <link rel="stylesheet" href="assets/vendor-bdd7503309f4bca3d3d96a49cf97e9ac.css">
-    <link rel="stylesheet" href="assets/dummy-8abd1aa62c9f82e1d00296a9e7086a87.css">
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/dummy.css">
   </head>
   <body>
     <script>
-      window.EmberENV = {"modulePrefix":"dummy","environment":"production","baseURL":"/ember-cli-lightbox/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{}};
+      window.EmberENV = {"modulePrefix":"dummy","environment":"development","baseURL":"/ember-cli-lightbox/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true}};
     </script>
-    <script src="assets/vendor-c8da9bf86548797f1cb579ed846d4768.js"></script>
-    <script src="assets/dummy-771bf19500c857a8e2e98374b0bdeb1f.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/dummy.js"></script>
     <script>
-      window.Dummy = require('dummy/app')['default'].create({});
+      window.Dummy = require('dummy/app')['default'].create({"LOG_ACTIVE_GENERATION":true,"LOG_VIEW_LOOKUPS":true});
     </script>
   </body>
 </html>

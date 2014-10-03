@@ -56,6 +56,10 @@ hr {
     margin: 20px 0;
     border: 1px solid #ddd;
 }
+.footer {
+    padding: 20px 0;
+    text-align: center;
+}
 
 /*!
  * "Fork me on GitHub" CSS ribbon v0.1.1 | MIT License
