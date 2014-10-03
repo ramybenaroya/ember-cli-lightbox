@@ -1,7 +1,6 @@
 {
-  "name": "dummy",
-  "version": "0.0.1",
-  "private": true,
+  "name": "ember-cli-lightbox",
+  "version": "0.1.0",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,24 +14,19 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "ramybenaroya",
+  "author": "Ramy Ben Aroya",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
     "broccoli-asset-rev": "0.1.1",
     "broccoli-ember-hbs-template-compiler": "^1.6.1",
-    "broccoli-merge-trees": "^0.1.4",
-    "broccoli-replace": "^0.1.7",
-    "broccoli-static-compiler": "^0.1.4",
-    "broccoli-string-replace": "0.0.2",
     "ember-cli": "0.0.46",
     "ember-cli-ic-ajax": "0.1.1",
     "ember-cli-inject-live-reload": "^1.0.2",
     "ember-cli-qunit": "0.1.0",
     "ember-data": "1.0.0-beta.10",
     "express": "^4.8.5",
-    "glob": "^4.0.5",
-    "replace": "^0.3.0"
+    "glob": "^4.0.5"
   },
   "keywords": [
     "ember-addon",
