@@ -14,7 +14,7 @@ Preview image on image click
 
 Preview image on some DOM click
 ```hbs
-{{#light-box href="/assets/images/6.jpg" data-lightbox=name data-title=title inlineImage=false}}
+{{#light-box href=imageUrl data-lightbox=name data-title=title inlineImage=false}}
     <!-- DOM Element here -->
 {{/light-box}}
 ```
