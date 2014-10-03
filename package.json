@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/ramybenaroya/ember-cli-lightbox",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -35,7 +35,12 @@
     "replace": "^0.3.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "lightbox",
+    "ember-cli",
+    "lightbox2",
+    "lokesh",
+    "ramybenaroya"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
