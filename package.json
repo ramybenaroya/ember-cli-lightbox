@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "ramybenaroya",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "^1.2.0",
