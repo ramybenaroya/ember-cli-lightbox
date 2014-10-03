@@ -1,14 +1,31 @@
 # Ember-cli-lightbox
 
-This README outlines the details of collaborating on this Ember addon.
+A lightbox component for ember using http://lokeshdhakar.com/projects/lightbox2/
 
-## Installation
+## Usage
+
+* `npm install --save ember-cli-lightbox`
+* `ember g ember-cli-lightbox`
+
+Preview image on image click
+```hbs
+{{light-box href=imageUrl data-lightbox=name data-title=title}}
+```
+
+Preview image on some DOM click
+```hbs
+{{#light-box href="/assets/images/6.jpg" data-lightbox=name data-title=title inlineImage=false}}
+    <!-- DOM Element here -->
+{{/light-box}}
+```
+
+## Development
 
 * `git clone` this repository
 * `npm install`
 * `bower install`
 
-## Running
+## Previewing
 
 * `ember server`
 * Visit your app at http://localhost:4200.
