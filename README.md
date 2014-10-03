@@ -24,6 +24,7 @@ Preview image on some DOM click
 * `git clone` this repository
 * `npm install`
 * `bower install`
+* `ember g ember-cli-lightbox`
 
 ## Previewing
 
