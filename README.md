@@ -1,6 +1,6 @@
-# Ember-cli-lightbox
+# Ember-cli-lightbox [![Build Status](https://travis-ci.org/ramynemaroya/ember-cli-lightbox.svg)](https://travis-ci.org/ramybenaroya/ember-cli-lightbox)
 
-A lightbox component for ember using http://lokeshdhakar.com/projects/lightbox2/
+A lightbox component for ember using [http://lokeshdhakar.com/projects/lightbox2/](Lightbox2).
 
 ## Usage
 
