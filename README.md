@@ -19,17 +19,20 @@ Preview image on some DOM click
 {{/light-box}}
 ```
 
-## Development
+## Demo
+Check out the demo on [github pages](http://ramybenaroya.github.io/ember-cli-lightbox/ "Ember-cli-lightbox Demo").
+Alternatively you can clone this repo and run the app
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
-* `ember g ember-cli-lightbox`
-
-## Previewing
-
-* `ember server`
-* Visit your app at http://localhost:4200.
+```sh
+$ sudo npm install -g ember-cli
+$ git clone git@github.com:ramybenaroya/ember-cli-lightbox
+$ cd ember-cli-lightbox
+# install dependencies
+$ npm install; bower install
+$ ember g ember-cli-lightbox
+# fire up local server
+$ ember serve
+```
 
 ## Running Tests
 
