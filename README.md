@@ -20,7 +20,6 @@ Preview image on some DOM click
 {{#light-box 	href=imageUrl
 				data-lightbox=name
 				data-title=title
-				data-class=imgClassName
 				inlineImage=false}}
     <!-- DOM Element here -->
 {{/light-box}}
