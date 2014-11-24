@@ -9,12 +9,19 @@ A lightbox component for ember using [Lightbox2](http://lokeshdhakar.com/project
 
 Preview image on image click
 ```hbs
-{{light-box href=imageUrl data-lightbox=name data-title=title}}
+{{light-box href=imageUrl
+			data-lightbox=name 
+			data-title=title
+			data-class=imgClassName}}
 ```
 
 Preview image on some DOM click
 ```hbs
-{{#light-box href=imageUrl data-lightbox=name data-title=title inlineImage=false}}
+{{#light-box 	href=imageUrl
+				data-lightbox=name
+				data-title=title
+				data-class=imgClassName
+				inlineImage=false}}
     <!-- DOM Element here -->
 {{/light-box}}
 ```
