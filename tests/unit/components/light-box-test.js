@@ -2,11 +2,15 @@ import {
 	moduleForComponent, test
 }
 from 'ember-qunit';
+import setupForLink from '../../../helpers/setup-for-link';
+import Ember from 'ember';
+var $ = Ember.$;
 
 moduleForComponent('light-box', 'Unit | Component | light box', {
 	// Specify the other units that are required for this test
 	// needs: ['component:foo', 'helper:bar'],
-	unit: true
+	unit: true,
+	setup: setupForLink
 });
 
 test('it renders', function(assert) {
@@ -30,8 +34,8 @@ test('it opens lightbox on image click', function(assert) {
 	});
 
 	this.render();
-	assert.equal($('#lightboxOverlay').length, 1);
-	assert.equal($('#lightbox').length, 1);
+	assert.equal($('#lightboxOverlay').length, 1, 'lightbox overlay is missing');
+	assert.equal($('#lightbox').length, 1, 'lightbox container is missing');
 });
 
 test('it renders a link without an image when `inlineImage` is false', function(assert) {
@@ -43,5 +47,5 @@ test('it renders a link without an image when `inlineImage` is false', function(
 	});
 
 	this.render();
-	assert.equal(this.$('img').length, 0);
+	assert.equal(this.$('img').length, 0, 'Component contains an image element');
 });
