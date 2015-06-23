@@ -25,6 +25,13 @@ Preview image on some DOM click
 {{/light-box}}
 ```
 
+## Ember Compatibility Table
+
+| Ember Version    | Lightbox Version     |
+| -----------------| ---------------------|
+| 1.8 through 1.10 | 0.2.0                |
+| 1.11 and beyond  | >=0.3.0              |
+
 ## Demo
 Check out the demo on [github pages](http://ramybenaroya.github.io/ember-cli-lightbox/ "Ember-cli-lightbox Demo").
 Alternatively you can clone this repo and run the app
