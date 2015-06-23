@@ -12,7 +12,12 @@ module.exports = {
       resolutions: {
         'ember': 'release'
       }
-    },
+    }
+    
+    /* These were commented out until https://github.com/rwjblue/ember-qunit/issues/52 is fixed */
+    
+    /*
+    ,
     {
       name: 'ember-beta',
       dependencies: {
@@ -31,5 +36,7 @@ module.exports = {
         'ember': 'canary'
       }
     }
+    */
+    
   ]
 };

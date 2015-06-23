@@ -2,14 +2,12 @@ import {
 	moduleForComponent, test
 }
 from 'ember-qunit';
-import setupForLink from '../../helpers/setup-for-link';
 import Ember from 'ember';
 
 moduleForComponent('light-box', 'Unit | Component | light box', {
 	// Specify the other units that are required for this test
 	// needs: ['component:foo', 'helper:bar'],
 	unit: true,
-	setup: setupForLink
 });
 
 test('it renders', function(assert) {
