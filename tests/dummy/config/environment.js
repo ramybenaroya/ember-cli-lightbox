@@ -16,6 +16,20 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    'ember-cli-lightbox': {
+      lightboxOptions: {
+        alwaysShowNavOnTouchDevices:  false,
+        albumLabel:                   "Image %1 of %2",
+        disableScrolling:             true,
+        fadeDuration:                 500,
+        fitImagesInViewport:          true,
+        maxWidth:                     undefined,
+        maxHeight:                    undefined,
+        positionFromTop:              50,
+        resizeDuration:               700,
+        showImageNumberLabel:         true
+      }
     }
   };
 

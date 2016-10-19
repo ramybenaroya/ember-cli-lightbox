@@ -25,6 +25,37 @@ Preview image on some DOM click
 {{/light-box}}
 ```
 
+## Configuration
+
+Setting [global lightbox options](http://lokeshdhakar.com/projects/lightbox2/#options):
+```javascript
+// config/enironment.js
+module.exports = function(environment) {
+  var ENV = {
+    //...
+    'ember-cli-lightbox': {
+    	lightboxOptions: {
+    		alwaysShowNavOnTouchDevices: 	false,
+    		albumLabel:						"Image %1 of %2",
+    		disableScrolling:				false,
+    		fadeDuration:					500,
+    		fitImagesInViewport:			true,
+    		maxWidth:						1000,
+    		maxHeight:						1000,
+    		positionFromTop:				50,
+    		resizeDuration:					700,
+    		showImageNumberLabel:			true
+    	}
+    }
+  };
+  //...
+
+  return ENV;
+};
+```
+
+Setting (global lightbox options)[http://lokeshdhakar.com/projects/lightbox2/#options] can be 
+
 ## Ember Compatibility Table
 
 | Ember Version       | Ember-Cli-Lightbox Version |
