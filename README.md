@@ -54,8 +54,6 @@ module.exports = function(environment) {
 };
 ```
 
-Setting (global lightbox options)[http://lokeshdhakar.com/projects/lightbox2/#options] can be 
-
 ## Ember Compatibility Table
 
 | Ember Version       | Ember-Cli-Lightbox Version |
