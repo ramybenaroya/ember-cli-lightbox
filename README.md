@@ -27,10 +27,11 @@ Preview image on some DOM click
 
 ## Ember Compatibility Table
 
-| Ember Version    | Lightbox Version     |
-| -----------------| ---------------------|
-| 1.8 through 1.10 | 0.2.0                |
-| 1.11 and beyond  | >=0.3.0              |
+| Ember Version       | Ember-Cli-Lightbox Version |
+| --------------------| ---------------------------|
+| 1.8 through 1.10    | 0.2.0                      |
+| 1.11 through 1.13   | 0.3.0 =< x < 1.0.0         |
+| 2.0 and beyond      | >=1.0.0                    |
 
 ## Demo
 Check out the demo on [github pages](http://ramybenaroya.github.io/ember-cli-lightbox/ "Ember-cli-lightbox Demo").
