@@ -8,7 +8,7 @@ module.exports = {
     },
     included: function lightbox_included(app) {
         this._super.included.apply(this, arguments);
-        var lightboxPath = path.join(app.bowerDirectory, 'lightbox2', 'dist'),
+        var lightboxPath = path.join(app.bowerDirectory, 'lightbox', 'dist'),
             lightboxCssContent = fs.readFileSync(path.join(lightboxPath, 'css', 'lightbox.css'),'utf8');
         lightboxCssContent = lightboxCssContent.replace(/\.\.\/images\//g, 'images/lightbox/');
         fs.writeFileSync(path.join(lightboxPath, 'css', 'lightbox.processed.css'), lightboxCssContent);
