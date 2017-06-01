@@ -11,6 +11,6 @@ module.exports = {
   // }
 
   afterInstall: function(options) {
-    return this.addBowerPackageToProject('lightbox', '2.8.2');
+    return this.addBowerPackageToProject('lightbox', '2.9.0');
   }
 };
