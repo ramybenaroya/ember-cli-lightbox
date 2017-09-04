@@ -1,5 +1,6 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
+import $ from 'jquery';
 
 moduleForComponent('light-box', 'Integration | Component | light box', {
   integration: true

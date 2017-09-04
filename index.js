@@ -1,37 +1,33 @@
+/* eslint-env node */
 'use strict';
-var path = require('path'),
-    fs = require('fs');
+var BroccoliPostCSS = require('broccoli-postcss');
+
 module.exports = {
     name: 'ember-cli-lightbox',
-    blueprintsPath: function() {
-        return path.join(__dirname, 'blueprints');
-    },
-    included: function lightbox_included(app) {
-        this._super.included.apply(this, arguments);
-        var lightboxPath = path.join(app.bowerDirectory, 'lightbox2', 'dist');
-        var lightboxCssContent;
-
-        if (!fs.existsSync(lightboxPath)) {
-            lightboxPath = path.join(app.bowerDirectory, 'lightbox', 'dist');
+    options: {
+        nodeAssets: {
+            lightbox2: {
+                public: {
+                    srcDir: 'dist/images',
+                    destDir: 'assets/images/lightbox',
+                    include: ['*']
+                },
+                import: {
+                    include: ['dist/js/lightbox.js', 'dist/css/lightbox.css'],
+                    processTree(input) {
+                        return new BroccoliPostCSS(input, {
+                            plugins: [{
+                                module: require('postcss-url'),
+                                options: {
+                                    url(originalURL) {
+                                        return originalURL.url.replace('../images/', './images/lightbox/');
+                                    }
+                                }
+                            }]
+                        });
+                    }
+                }
+            }
         }
-
-        lightboxCssContent = fs.readFileSync(path.join(lightboxPath, 'css', 'lightbox.css'),'utf8');
-        lightboxCssContent = lightboxCssContent.replace(/\.\.\/images\//g, 'images/lightbox/');
-        fs.writeFileSync(path.join(lightboxPath, 'css', 'lightbox.processed.css'), lightboxCssContent);
-        this.app.import(path.join(lightboxPath, 'js',  'lightbox.js'));
-        this.app.import(path.join(lightboxPath, 'css', 'lightbox.processed.css'));
-
-        this.app.import(path.join(lightboxPath, 'images', 'close.png'), {
-            destDir: 'assets/images/lightbox'
-        });
-        this.app.import(path.join(lightboxPath, 'images', 'loading.gif'), {
-            destDir: 'assets/images/lightbox'
-        });
-        this.app.import(path.join(lightboxPath, 'images', 'next.png'), {
-            destDir: 'assets/images/lightbox'
-        });
-        this.app.import(path.join(lightboxPath, 'images', 'prev.png'), {
-            destDir: 'assets/images/lightbox'
-        });
     }
 };

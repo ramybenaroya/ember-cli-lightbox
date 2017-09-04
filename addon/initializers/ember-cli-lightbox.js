@@ -1,6 +1,6 @@
 export function initialize(addonConfig /*, application */) {
   if (window.lightbox && addonConfig && addonConfig.lightboxOptions) {
-  	window.lightbox.option(addonConfig.lightboxOptions);
+    window.lightbox.option(addonConfig.lightboxOptions);
   }
 }
 

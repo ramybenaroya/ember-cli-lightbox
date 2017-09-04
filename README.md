@@ -4,8 +4,7 @@ A lightbox component for ember using [Lightbox2](http://lokeshdhakar.com/project
 
 ## Usage
 
-* `npm install --save ember-cli-lightbox`
-* `ember g ember-cli-lightbox`
+* `ember install ember-cli-lightbox`
 
 Preview image on image click
 ```hbs
