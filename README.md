@@ -55,11 +55,12 @@ module.exports = function(environment) {
 
 ## Ember Compatibility Table
 
-| Ember Version       | Ember-Cli-Lightbox Version |
-| --------------------| ---------------------------|
-| 1.8 through 1.10    | 0.2.0                      |
-| 1.11 through 1.13   | 0.3.0 =< x < 1.0.0         |
-| 2.0 and beyond      | >=1.0.0                    |
+| Ember Version			| Ember-Cli-Lightbox Version |
+| ---------------------	| ---------------------------|
+| 1.8 through 1.10		| 0.2.0                      |
+| 1.11 through 1.13		| 0.3.0 =< x < 1.0.0         |
+| 2.0 and beyond 		| >=1.0.0                    |
+| Addons				| >=2.0.0                    |
 
 ## Demo
 Check out the demo on [github pages](http://ramybenaroya.github.io/ember-cli-lightbox/ "Ember-cli-lightbox Demo").
@@ -70,8 +71,7 @@ $ npm install -g ember-cli
 $ git clone git@github.com:ramybenaroya/ember-cli-lightbox
 $ cd ember-cli-lightbox
 # install dependencies
-$ npm install; bower install
-$ ember g ember-cli-lightbox
+$ npm i
 # fire up local server
 $ ember serve
 ```

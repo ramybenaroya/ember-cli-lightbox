@@ -1,17 +1,20 @@
 {
   "name": "ember-cli-lightbox",
   "version": "2.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember Cli Addon for Lightbox2",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "@ramybenaroya",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramybenaroya/ember-cli-lightbox"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
