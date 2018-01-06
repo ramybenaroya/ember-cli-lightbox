@@ -8,19 +8,23 @@ A lightbox component for ember using [Lightbox2](http://lokeshdhakar.com/project
 
 Preview image on image click
 ```hbs
-{{light-box href=imageUrl
-			data-lightbox=name 
-			data-title=title
-			data-class=imgClassName}}
+{{light-box 
+  href=imageUrl 
+  data-lightbox=name 
+  data-title=title 
+  data-alt=alt 
+  data-class=imgClassName}}
 ```
 
 Preview image on some DOM click
 ```hbs
-{{#light-box 	href=imageUrl
-				data-lightbox=name
-				data-title=title
-				inlineImage=false}}
-    <!-- DOM Element here -->
+{{#light-box 	
+  href=imageUrl 
+  data-lightbox=name 
+  data-title=title 
+  data-alt=alt 
+  inlineImage=false}}
+  <!-- DOM Element here -->
 {{/light-box}}
 ```
 
@@ -33,18 +37,18 @@ module.exports = function(environment) {
   var ENV = {
     //...
     'ember-cli-lightbox': {
-    	lightboxOptions: {
-    		alwaysShowNavOnTouchDevices: 	false,
-    		albumLabel:						"Image %1 of %2",
-    		disableScrolling:				false,
-    		fadeDuration:					500,
-    		fitImagesInViewport:			true,
-    		maxWidth:						1000,
-    		maxHeight:						1000,
-    		positionFromTop:				50,
-    		resizeDuration:					700,
-    		showImageNumberLabel:			true
-    	}
+      lightboxOptions: {
+        alwaysShowNavOnTouchDevices: false,
+        albumLabel: "Image %1 of %2",
+        disableScrolling: false,
+        fadeDuration: 500,
+        fitImagesInViewport: true,
+        maxWidth: 1000,
+        maxHeight: 1000,
+        positionFromTop: 50,
+        resizeDuration: 700,
+        showImageNumberLabel: true
+      }
     }
   };
   //...
