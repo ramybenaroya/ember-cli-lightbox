@@ -30,7 +30,8 @@ test('it opens lightbox on image click', function(assert) {
     {{light-box
       href="assets/images/1.jpg"
       data-lightbox="cat-1"
-      data-title="Cat 1"}}
+      data-title="Cat 1"
+      data-alt="Cat 1"}}
   `);
   assert.equal($('#lightboxOverlay').length, 1, 'lightbox overlay is missing');
   assert.equal($('#lightbox').length, 1, 'lightbox container is missing');
@@ -42,6 +43,7 @@ test('it renders a link without an image when `inlineImage` is false', function(
       href="assets/images/1.jpg"
       data-lightbox="cat-1"
       data-title="Cat 1"
+      data-alt="Cat 1"
       inlineImage=false}}
   `);
   assert.equal(this.$('img').length, 0, 'Component contains an image element');
