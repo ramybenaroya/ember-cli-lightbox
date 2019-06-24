@@ -12,18 +12,18 @@
     <h2>Usage Examples</h2>
     <section>
         <h2>Individual Clickable Images</h2>
-        {{light-box href="assets/images/1.jpg" data-lightbox="cat-1" data-title="Cat 1"}}
-        {{light-box href="assets/images/2.jpg" data-lightbox="cat-2" data-title="Cat 2"}}
+        {{light-box href="assets/images/1.jpg" data-lightbox="cat-1" data-title="Cat 1" data-alt="Cat 1"}}
+        {{light-box href="assets/images/2.jpg" data-lightbox="cat-2" data-title="Cat 2" data-alt="Cat 2"}}
         <hr/>
         <h4>Code</h4>
         {{code-snippet name="1.hbs"}}
     </section>
     <section>
         <h2>Individual Clickable Links</h2>
-        {{#light-box href="assets/images/3.jpg" data-lightbox="cat-3" data-title="Cat 3" inlineImage=false}}
+        {{#light-box href="assets/images/3.jpg" data-lightbox="cat-3" data-title="Cat 3" data-alt="Cat 3" inlineImage=false}}
             Cat 4
         {{/light-box}}
-        {{#light-box href="assets/images/4.jpg" data-lightbox="cat-4" data-title="Cat 4" inlineImage=false}}
+        {{#light-box href="assets/images/4.jpg" data-lightbox="cat-4" data-title="Cat 4" data-alt="Cat 4" inlineImage=false}}
             Cat5
         {{/light-box}}
         <hr/>
@@ -32,12 +32,12 @@
     </section>
     <section class='special'>
         <h2>Grouped Images & Links</h2>
-        {{light-box href="assets/images/5.jpg" data-lightbox="cats-group" data-title="Cat 5"}}
-        {{#light-box href="assets/images/6.jpg" data-lightbox="cats-group" data-title="Cat 6" inlineImage=false}}
+        {{light-box href="assets/images/5.jpg" data-lightbox="cats-group" data-title="Cat 5" data-alt="Cat 5"}}
+        {{#light-box href="assets/images/6.jpg" data-lightbox="cats-group" data-title="Cat 6" data-alt="Cat 6" inlineImage=false}}
             Cat 6
         {{/light-box}}
-        {{light-box href="assets/images/7.jpg" data-lightbox="cats-group" data-title="Cat 7"}}
-        {{#light-box href="assets/images/8.jpg" data-lightbox="cats-group" data-title="Cat 8" inlineImage=false}}
+        {{light-box href="assets/images/7.jpg" data-lightbox="cats-group" data-title="Cat 7" data-alt="Cat 7"}}
+        {{#light-box href="assets/images/8.jpg" data-lightbox="cats-group" data-title="Cat 8" data-alt="Cat 8" inlineImage=false}}
             Cat 8
         {{/light-box}}
         <hr/>
