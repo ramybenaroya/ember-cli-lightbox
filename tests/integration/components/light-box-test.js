@@ -1,44 +1,42 @@
-import { moduleForComponent, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupRenderingTest } from 'ember-qunit';
+import { render } from '@ember/test-helpers';
+import jQuery from 'jquery'
 import hbs from 'htmlbars-inline-precompile';
-import $ from 'jquery';
 
-moduleForComponent('light-box', 'Integration | Component | light box', {
-  integration: true
-});
+module('Integration | Component | light box', function (hooks) {
+  setupRenderingTest(hooks);
 
-test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
+  test('it renders', async function (assert) {
+    await render(hbs`{{light-box}}`);
+    assert.dom(this.element).hasText('')
 
-  this.render(hbs`{{light-box}}`);
-
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
+    // Template block usage:
+    await render(hbs`
     {{#light-box}}
       template block text
     {{/light-box}}
   `);
 
-  assert.equal(this.$().text().trim(), 'template block text');
-});
+    assert.dom(this.element).hasText('template block text');
+  });
 
-test('it opens lightbox on image click', function(assert) {
-  assert.expect(2);
-  this.render(hbs`
+  test('it opens lightbox on image click', async function (assert) {
+    assert.expect(2);
+    await render(hbs`
     {{light-box
       href="assets/images/1.jpg"
       data-lightbox="cat-1"
       data-title="Cat 1"
       data-alt="Cat 1"}}
   `);
-  assert.equal($('#lightboxOverlay').length, 1, 'lightbox overlay is missing');
-  assert.equal($('#lightbox').length, 1, 'lightbox container is missing');
-});
 
-test('it renders a link without an image when `inlineImage` is false', function(assert) {
-  this.render(hbs`
+    assert.equal(jQuery('#lightboxOverlay').length, 1, 'lightbox overlay is missing');
+    assert.equal(jQuery('#lightbox').length, 1, 'lightbox container is missing');
+  });
+
+  test('it renders a link without an image when `inlineImage` is false', async function (assert) {
+    await render(hbs`
     {{light-box
       href="assets/images/1.jpg"
       data-lightbox="cat-1"
@@ -46,5 +44,7 @@ test('it renders a link without an image when `inlineImage` is false', function(
       data-alt="Cat 1"
       inlineImage=false}}
   `);
-  assert.equal(this.$('img').length, 0, 'Component contains an image element');
+
+    assert.dom('img').doesNotExist('Component does not contain inline image element');
+  });
 });
