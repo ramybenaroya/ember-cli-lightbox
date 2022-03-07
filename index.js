@@ -1,8 +1,7 @@
-/* eslint-env node */
 'use strict';
+/* eslint-disable node/no-unpublished-require */
 var BroccoliPostCSS = require('broccoli-postcss');
 const fastbootTransform = require('fastboot-transform');
-var MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
     name: 'ember-cli-lightbox',

@@ -1,7 +1,7 @@
-import Ember from 'ember';
 import layout from '../templates/components/light-box';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
 	layout: layout,
 	tagName: 'a',
 	attributeBindings: ['href', 'data-lightbox', 'data-title', 'data-class', 'data-alt'],
